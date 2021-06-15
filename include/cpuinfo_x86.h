@@ -89,6 +89,7 @@ typedef struct {
 
   int dca : 1;
   int ss : 1;
+  int adx : 1;
   // Make sure to update X86FeaturesEnum below if you add a field here.
 } X86Features;
 
@@ -137,6 +138,7 @@ typedef enum {
   AMD_BULLDOZER,   // K15
   AMD_JAGUAR,      // K16
   AMD_ZEN,         // K17
+  AMD_ZEN3,        // K19
 } X86Microarchitecture;
 
 // Returns the underlying microarchitecture by looking at X86Info's vendor,
@@ -213,6 +215,7 @@ typedef enum {
   X86_RDRND,
   X86_DCA,
   X86_SS,
+  X86_ADX,
   X86_LAST_,
 } X86FeaturesEnum;
 
